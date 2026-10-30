@@ -1,0 +1,9 @@
+# Local runtime, credentials and generated experiment data
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.ipynb_checkpoints/
+learning-artifacts/**/runs/
+learning-artifacts/**/checkpoints/
