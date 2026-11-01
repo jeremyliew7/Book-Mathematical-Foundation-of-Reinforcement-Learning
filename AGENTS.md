@@ -1,18 +1,20 @@
-# Agent 协作规则
+# Agent Collaboration Rules
 
-本仓库是英文教材的个人 fork。`origin` 指个人 fork，`upstream` 指作者仓库；个人新增内容与上游原件分开维护。
+This repository is a personal fork of an English textbook. `origin` points to the personal fork and `upstream` to the author's repository. Keep personal additions separate from upstream originals.
 
-## 入口与权威
+## Entry Points and Authority
 
-- 开始、继续或调整学习时先读 [LEARNING.md](LEARNING.md) 和 [学习指南](LEARNING-GUIDE.md)，再按任务读取 `.agents/skills/rl-learning/SKILL.md`；源教材按当前章节读取，先核对勘误。教学以实际页码、公式及假设为准。
-- 同步作者更新时先读 `.agents/skills/rl-upstream-sync/SKILL.md`；Git 操作前核对仓库、分支、暂存区、工作区、远程和并发状态。不得自动 stash、reset、clean、强推或覆盖他人改动。
-- `LEARNING.md` 是课程断点和学习证据的唯一权威；不要用聊天历史、根交接或文件时间推测已掌握。暂停、课末或切换 Agent 时保存实际断点；普通问答无需每轮写文件。
-- 若从 ResHub 内启动，也遵守 Vault 根 AGENTS；从独立仓库启动时不得假定能写入 Vault。必要时告知待回写事项。
+- Before starting, continuing, or changing the learning plan, read [LEARNING.md](LEARNING.md) and the [learning guide](LEARNING-GUIDE.md), then read `.agents/skills/rl-learning/SKILL.md` for learning tasks. Read the current textbook section and check the applicable errata. Teaching must follow the actual pages, formulas, and assumptions.
+- When writing or revising section companions, read the [lesson template](LESSON-TEMPLATE.md) and check each point against the textbook.
+- When locating a concept, question, or formula, read `.agents/skills/rl-course-guide/SKILL.md`, search the [candidate section index](learning-artifacts/textbook/INDEX.md), and check the original PDF.
+- Before syncing the author's updates, read `.agents/skills/rl-upstream-sync/SKILL.md`. Before Git operations, check the repository, branch, index, working tree, remotes, and concurrent activity. Do not automatically stash, reset, clean, force-push, or overwrite others' work.
+- `LEARNING.md` is the sole authority for the course checkpoint and learning evidence. Do not infer mastery from chat history, the Vault handoff, or file timestamps. Save the actual checkpoint when pausing, ending a lesson, or changing agents; ordinary questions need no per-turn file update.
+- When launched from ResHub, also follow the Vault root AGENTS. When launched from this independent repository, do not assume permission to write to the Vault. Report any needed handoff when appropriate.
 
-## 协作边界
+## Collaboration Boundaries
 
-- 中英混合教学：保留英文术语和原文符号，中文解释、推导和反馈；只在需要时引用短片段并标明来源和页码，不预设逐章全文翻译。
-- 学习者本人作答；Agent 可分工核对教材、推导或代码，主 Agent 综合并检查冲突，不能模拟学习者答案或把计划当成果。无子代理时同样可完成流程。
-- 用具体回答、手算、推导或运行结果作为证据；未验证的结论标明不确定。不要凭少量诊断题自动跳章或宣布掌握。停在未答的问题上，恢复时先重述问题而不透露答案。
-- 上游书、幻灯片和代码保持原样；自己的笔记、练习和实验放 `learning-artifacts/`。不将私密信息、凭据、环境文件、缓存、大型生成物或原文大段复制推到公开 fork。仓库未声明许可证，引用遵守适用权利与限制。
-- 用户此次授权完成搭建的提交和推送，不代表以后自动推送；后续仅按当次授权提交与推送。提交前核对范围及隐私。
+- Teach in a mixture of English and Chinese: retain English terminology and source notation, and explain, derive, and give feedback in Chinese. Quote only short passages when needed with a source and page; do not require a full translation of every chapter by default.
+- The learner answers for themselves. Agents may independently check the textbook, derivations, or code; the lead agent reconciles conflicts. Do not simulate learner answers or present plans as completed work. The workflow also works without subagents.
+- Use actual responses, hand calculations, derivations, or execution results as evidence; label unverified conclusions. Do not skip chapters or declare mastery from a few diagnostic questions. When paused on an unanswered question, restate it on resume without revealing its answer.
+- Preserve upstream books, slides, and code. Put personal notes, exercises, and experiments under `learning-artifacts/`. Do not push private information, credentials, environment files, caches, large generated artifacts, or long copies of the original text to the public fork. The upstream repository declares no license; observe applicable rights and restrictions when citing it.
+- The user's authorization to commit and push the initial setup does not authorize future automatic pushes. Commit or push later work only within the current authorization; check scope and privacy first.

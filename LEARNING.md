@@ -1,19 +1,19 @@
-# 强化学习数学基础：学习状态
+# Mathematical Foundations of Reinforcement Learning: Progress
 
-这是课程进度的唯一权威。仅记录学习者真实完成的工作；章节文件和页码由每次实际阅读确认。
+This is the sole authority for course progress. Record only work the learner actually completed; confirm the chapter file and page numbers during each reading.
 
-- 状态：尚未开始。未完成诊断、教学、练习、测验或实验。
-- 当前来源：[Chapter 1 Basic Concepts](3%20-%20Chapter%201%20Basic%20Concepts.pdf)；按需查阅 [Errata](5%20-%20Errata%20for%20the%20Springer%20version.pdf)，核对适用版本；作者说明该表针对 Springer 印刷版，GitHub PDF 已修正部分问题。
-- 初始化上游基线：`60f6c1a56ddd2e3a823dddf0d831f9fd1518c8bd`；每次记录实际阅读的提交与页码，不预填未读位置。
-- 断点：首次开始，先了解目标和已有基础，针对具体困难安排轻量诊断；尚无待答题。
-- 下一步：打开第 1 章，确认目录和第一小节页码，建立一个最小决策过程例子，开始互动。
-- 待复习：无（尚无学习证据）。
-- 已验证证据：无。
+- Status: Not started. No diagnostic, lesson, exercise, quiz, or experiment has been completed.
+- Current source: [Chapter 1: Basic Concepts](3%20-%20Chapter%201%20Basic%20Concepts.pdf). Consult the [errata](5%20-%20Errata%20for%20the%20Springer%20version.pdf) when relevant and check its version: the author says it applies to the Springer print edition and the GitHub PDF already incorporates some corrections.
+- Initial upstream baseline: `60f6c1a56ddd2e3a823dddf0d831f9fd1518c8bd`. Record the commit and pages actually read for each lesson; do not prefill unread locations.
+- Checkpoint: First session. Learn the learner's goals and background and use a light diagnostic for specific gaps; no question is awaiting an answer.
+- Next: Open Chapter 1, confirm the contents and first section's page, introduce a minimal decision-process example, and begin interactive study.
+- Review queue: None; there is no learning evidence yet.
+- Verified evidence: None.
 
-## 记录约定
+## Recording Convention
 
-暂停、课末或移交时更新当前来源（文件、章节／页码、commit）、已完成内容与证据、困难、待复习、下一步及未答问题。保留历史记录，纠正错误时注明依据；不推测学习者掌握。实际实验另记环境、命令、seed、预算、指标、结果及限制。公开 fork 上的记录只写适合公开的内容。
+When pausing, ending a lesson, or handing off, update the current source (file, section or page, and commit), completed work and evidence, difficulties, review queue, next step, and any unanswered question. Preserve earlier records and cite the basis for corrections; do not infer mastery. For actual experiments also record environment, command, seed, budget, metrics, results, and limitations. Keep only information suitable for a public fork.
 
-## 学习记录
+## Learning Log
 
-尚无。
+None yet.

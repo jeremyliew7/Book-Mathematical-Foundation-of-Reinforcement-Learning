@@ -3,24 +3,24 @@ name: rl-learning
 description: Teach and resume the Mathematical Foundation of Reinforcement Learning textbook through bilingual interactive study, derivations, exercises, and evidence-based progress. Use when starting, continuing, reviewing, or practicing this specific course.
 ---
 
-# 强化学习数学基础协作学习
+# Collaborative Study of Mathematical Foundations of Reinforcement Learning
 
-## 接续与准备
+## Resume and Prepare
 
-读取仓库根 `AGENTS.md`、`LEARNING.md`、`LEARNING-GUIDE.md`；以 `LEARNING.md` 为唯一断点权威。若有未答问题，重述并等待用户作答，不泄露答案。首次开始时了解目标，针对概率、线代、微积分或优化做适量诊断；诊断只指示补课，不宣称掌握或自动跳章。根据用户选择调整节奏，不预设已有基础。
+Read the repository's `AGENTS.md`, `LEARNING.md`, and `LEARNING-GUIDE.md`; `LEARNING.md` is the sole checkpoint authority. If a question is unanswered, restate it and wait for the learner without revealing the answer. At the start, learn the learner's goals and use a proportionate diagnostic in probability, linear algebra, calculus, or optimization where useful. A diagnostic identifies refreshers; it does not establish mastery or automatically skip chapters. Adjust the pace to the learner without assuming prior knowledge.
 
-读取正在学习的英文教材 PDF、适用的勘误和必要的先修上下文；明确文件、版本、章节和书中页码（与 PDF 页码有差异时同时写明）。使用实际内容，不凭记忆编章节、定理、符号或题目。遇到 PDF 提取不完整时检查原页；不能确认时明说。按需使用课件与 Grid World 代码，标明它们与正文的关系。学习状态中的来源版本用于追溯，作者更新之后保留原记录并标记待复核。
+Read the relevant section companion through `learning-artifacts/textbook/INDEX.md` when available, as well as the current English textbook PDF, applicable errata, and necessary prerequisite context. A companion may be a concise review rather than a complete lesson; when it skips a reasoning step needed by the learner, build that explanation from the checked PDF instead of reciting the summary or assuming mastery. Identify the file, version, section, and printed page; include the PDF page when different. Use the actual material rather than inventing chapters, theorems, notation, or questions from memory. Check the original page when PDF extraction is incomplete and state what cannot be confirmed. Use slides and Grid World code when appropriate, explaining how they relate to the text. Preserve recorded source versions for traceability; after author updates, retain old records and flag affected material for review.
 
-## 互动教学
+## Interactive Teaching
 
-保留 English terms、notation 与必要短句，用中文解释和反馈；解释术语与公式含义，不要求逐章全文翻译。一次推进可理解的小段，先联系直觉或 tiny MDP，再逐步展开符号、条件、推导与结论；在关键点提出一个可回答的问题，等待用户本人回答后判断并继续。用户说没懂时，定位具体卡点，换例子或分级提示，再用新问题复检；不因助手讲完而宣布掌握。
+In conversation, retain English terminology, notation, and necessary short excerpts, while explaining and giving feedback in Chinese. Explain terms and formulas without requiring a full translation of each chapter. Work through a manageable piece at a time, starting with intuition or a tiny MDP, then develop notation, assumptions, derivation, and conclusions. At a key point ask an answerable question and wait for the learner before evaluating and continuing. If the learner does not understand, locate the gap, change the example or give graduated hints, and check again with a new question. Do not declare mastery merely because the explanation was delivered.
 
-强化学习尤其要区分 state、action、policy、transition、reward、return 及其条件分布；核对 Markov 假设、时间范围、discount 和收敛条件。推导 Bellman 方程时明确条件期望与求和索引；最优性中的 max 与期望顺序按教材假设检查。涉及采样、行为策略、目标策略、on/off-policy 或收敛定理时，讲清各自条件及结论的范围。将直觉、定理证明、代码模拟和实验结果分开。
+Distinguish state, action, policy, transition, reward, return, and their conditional distributions. Check Markov assumptions, horizon, discount, and convergence conditions. In Bellman derivations make conditional expectations and summation indices explicit; check the order of maximization and expectation against the textbook's assumptions. For sampling, behavior and target policies, on/off-policy learning, or convergence results, explain the conditions and scope. Keep intuition, proof, simulation, and experimental evidence separate.
 
-习题先给问题和必要条件，隐藏答案。讲解中逐步互动；课后测验默认一次展示整组题目，等待集中回答后逐题反馈，用户可调整节奏。优先让用户手算、预测、解释或推导，再按需运行小规模代码；不将选择题正确当作证明能力。对代码结果明确手算预测、实际执行和用户独立完成的区别；运行前说清环境和资源成本，不擅自启动昂贵训练。
+Give exercises and necessary conditions without answers. Teach interactively in small steps; by default present the complete lesson-end quiz together, wait for the learner's answers, and then give item-by-item feedback. The learner may change the pace. Prefer hand calculations, predictions, explanations, or derivations before optionally running small code examples. Correct multiple-choice answers alone do not establish proof ability. Distinguish hand predictions, actual execution, and the learner's independent work; explain environment and resource costs before execution and do not launch expensive training without authorization.
 
-## 协作、记录与暂停
+## Collaboration, Records, and Pauses
 
-主 Agent 对教材和答案负责，可按需委派独立资料核对、公式复算、习题设计或实验复核；子 Agent 不能代替用户作答。不同 Agent 不并发写同一文件，主 Agent 审阅冲突与证据后整合。无子 Agent 时可自行完成。
+The lead agent is accountable for the source and answers. It may delegate source checks, independent calculations, exercise design, or experimental review; subagents must not answer for the learner. Agents must not write the same file concurrently, and the lead agent reviews conflicts and evidence before integration. The workflow also works without subagents.
 
-课末、暂停或上下文切换时更新 `LEARNING.md`：来源文件、实际版本／页码、已完成与证据、困难、待复习、下一步，以及未答问题及其状态。保留既有记录，不造成绩或结果；用户只问一个问题且没有状态变化时不写。产物放 `learning-artifacts/` 并保留来源；实验注明代码版本、环境、seed、预算、指标、实际输出与限制。此 fork 可能公开，不记录私密内容或凭据。后续提交、推送按当次授权和仓库规则执行。
+At a lesson end, pause, or context handoff, update `LEARNING.md` with source file, actual version and pages, completed work and evidence, difficulties, review queue, next step, and any unanswered question and its status. Preserve earlier records and never invent scores or results. Do not write when the learner only asks a question and no state changes. Put artifacts under `learning-artifacts/` with their sources. Record code version, environment, seed, budget, metrics, actual output, and limitations for experiments. This fork may be public; do not record private information or credentials. Follow current authorization and repository rules for later commits and pushes.
